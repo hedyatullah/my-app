@@ -7,6 +7,7 @@ class App extends Component {
     return (
       <div>
         <h1>Welcome to React..</h1>
+        <h2>hi React World.</h2>
       </div>
     );
   }
