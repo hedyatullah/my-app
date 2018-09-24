@@ -11,9 +11,11 @@ export default class ListItem extends Component {
                         this.props.mydata.map((row,index) => {
                             return(
                             <tr key={index}>
+                            {
                                 Object.keys(row).map(row_index => { 
                                     return <td>{row[row_index]}</td>
                                 })
+                            }
                             </tr>
                             )                            
                         })
