@@ -13,7 +13,7 @@ class List extends Component {
     constructor(){
         super();
         this.state = {
-            mydata: mdata,            
+            mydata: mydata1,            
             searchresults: []
         }  
     }            
