@@ -1,21 +1,11 @@
 import React, { Component } from 'react';
 
+import Listheader from './listheader.js';
 
 export default class ListItem extends Component {    
     render(){   
         console.log(this.props.mydata);
-        return(
-            <table>
-                <thead>
-                    <tr>
-                        <th>Sr No.</th>
-                        <th>Name</th>
-                        <th>User Name</th>
-                        <th>Email Address</th>
-                        <th>Contact Number</th>
-                        <th>Website</th>
-                    </tr>
-                </thead>
+        return(            
                 <tbody>            
                     {
                         this.props.mydata.map((row,index) => {
@@ -31,10 +21,10 @@ export default class ListItem extends Component {
                             )
                         })
                     }
-                </tbody>                   
-            </table>
+                </tbody>                               
         )
     }      
 }
     
 //export default ListItem;
+
